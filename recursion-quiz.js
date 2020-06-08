@@ -31,7 +31,8 @@ function reverse(str) {
   }
 
   //move index 0 to str.length
-  return reverse(str.substr(1)) + str.charAt(0);
+  const char = str[0];
+  return reverse(str.slice(1)) + char;
 }
 
-console.log(reverse("cat"));
+console.log(reverse("this should reverse"));
